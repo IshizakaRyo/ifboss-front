@@ -1,0 +1,46 @@
+export const battingNums = [
+  { order: "firstHitter" },
+  { order: "secoundHitter" },
+  { order: "thirdHitter" },
+  { order: "fourthHitter" },
+  { order: "fifthHitter" },
+  { order: "sixthHitter" },
+  { order: "seventhHitter" },
+  { order: "eightHitter" },
+  { order: "ninthHitter" },
+];
+
+export const positions = [
+  { name: "捕", positionNum: 2 },
+  { name: "一", positionNum: 3 },
+  { name: "二", positionNum: 4 },
+  { name: "三", positionNum: 5 },
+  { name: "遊", positionNum: 6 },
+  { name: "左", positionNum: 7 },
+  { name: "中", positionNum: 8 },
+  { name: "右", positionNum: 9 },
+  { name: "指", positionNum: 10 },
+];
+
+export const players = [
+  { id: 1, name: "山本由伸", position: 1 },
+  { id: 2, name: "宮城大弥", position: 1 },
+  { id: 3, name: "山岡泰輔", position: 1 },
+  { id: 4, name: "山下舜平太", position: 1 },
+  { id: 5, name: "若月健矢", position: 2 },
+  { id: 6, name: "森友哉", position: 2 },
+  { id: 6, name: "頓宮裕真", position: 3 },
+  { id: 6, name: "セデーニョ", position: 3 },
+  { id: 6, name: "安達了一", position: 4 },
+  { id: 6, name: "宜保翔", position: 4 },
+  { id: 6, name: "宗佑磨", position: 5 },
+  { id: 6, name: "西野真弘", position: 5 },
+  { id: 6, name: "紅林弘太郎", position: 6 },
+  { id: 6, name: "野口智哉", position: 6 },
+  { id: 6, name: "福田周平", position: 7 },
+  { id: 6, name: "佐野皓大", position: 7 },
+  { id: 6, name: "中川圭太", position: 8 },
+  { id: 6, name: "茶野篤政", position: 8 },
+  { id: 6, name: "杉本裕太郎", position: 9 },
+  { id: 6, name: "小田裕也", position: 9 },
+];
