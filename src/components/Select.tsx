@@ -1,7 +1,32 @@
-import { Inter } from "next/font/google";
+import * as React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export default function Home() {
-  return <div></div>;
+interface Props {
+  names: any;
+  placeholder: string;
+}
+
+export default function SelectScrollable({ names, placeholder }: Props) {
+  return (
+    <Select>
+      <SelectTrigger className="w-[120px]">
+        <SelectValue placeholder={placeholder} />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          {names.map((name: any) => {
+            return <SelectItem value={name.name}>{name.name}</SelectItem>;
+          })}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  );
 }
