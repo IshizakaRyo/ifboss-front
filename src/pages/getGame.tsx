@@ -13,7 +13,7 @@ const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "http://localhost:8888/penya_atorie/api/baseball/dashbord",
+    "http://localhost:8888/ifboss-backend/public/api/baseball/dashbord",
     fetcher
   );
   //   const instance = axios.create({
@@ -31,10 +31,10 @@ export default function Home() {
     <main>
       <div>
         <p>ゲーム一覧</p>
-        <div className="w-[780px] flex flex-col gap-4 items-center bg-red-200">
+        <div className="flex flex-col gap-4 items-center bg-red-200">
           {data.product.map((game: any) => {
             return (
-              <Link href="">
+              <Link href="/schad_test">
                 <Card className="w-[380px] hover:bg-gray-100">
                   <CardHeader>
                     <CardTitle>vs {game.opponent_team.name}</CardTitle>
