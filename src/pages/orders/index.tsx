@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Heading from "@/components/common/Heading";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
@@ -24,8 +25,8 @@ export default function Home() {
   return (
     <main>
       <div>
-        <p>ゲーム一覧</p>
-        <div className="flex flex-col gap-4 items-center bg-red-200">
+        <Heading text="ゲーム一覧" />
+        <div className="flex flex-col gap-4 items-center pt-12">
           {data.product.map((game: any) => {
             return (
               <Link href="/schad_test">

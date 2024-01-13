@@ -1,14 +1,6 @@
 import useSWR from "swr";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Table } from "lucide-react";
+import Heading from "@/components/common/Heading";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
@@ -33,11 +25,8 @@ export default function index() {
   return (
     <main>
       <div>
-        <div className="text-2xl h-24 px-32 flex items-center bg-indigo-900 text-white front-semibold">
-          2023年6月25日の予想スタメン一覧
-        </div>
+        <Heading text="2023年6月25日の予想スタメン一覧" />
         <div className="flex flex-col gap-12 pt-12">
-          {/* {<p>{data.expected_order_array[2].user_name}</p>} */}
           {data.expected_order_array.map((expected_order: any, key: number) => {
             return (
               <div className="w-max mx-auto" key={key}>
